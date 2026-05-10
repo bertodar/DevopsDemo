@@ -56,4 +56,7 @@ public class FizzBuzzConverterTest {
     @Test
     void jenkinsRecordingTest() {
     }
+    @Test
+    void jenkinsFinalRecordingTest() {
+    }
 }
