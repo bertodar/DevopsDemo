@@ -53,7 +53,7 @@ public class FizzBuzzConverterTest {
         Assertions.assertEquals("FizzBuzz", fizzBuzz.convert(42));
         Assertions.assertEquals("FizzBuzz", fizzBuzz.convert(63));
     }
-  @Test
-    void jenkinsRecordingTest() {   
+    @Test
+    void jenkinsRecordingTest() {
     }
 }
