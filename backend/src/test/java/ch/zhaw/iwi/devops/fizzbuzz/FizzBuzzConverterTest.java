@@ -1,7 +1,5 @@
 package ch.zhaw.iwi.devops.fizzbuzz;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
-
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -56,7 +54,6 @@ public class FizzBuzzConverterTest {
         Assertions.assertEquals("FizzBuzz", fizzBuzz.convert(63));
     }
   @Test
-    void additionalSimpleTest() {
-    assertTrue(true);
+    void jenkinsRecordingTest() {   
     }
 }
