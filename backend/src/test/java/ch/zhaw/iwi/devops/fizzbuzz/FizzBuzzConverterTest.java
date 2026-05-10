@@ -1,5 +1,7 @@
 package ch.zhaw.iwi.devops.fizzbuzz;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -53,5 +55,8 @@ public class FizzBuzzConverterTest {
         Assertions.assertEquals("FizzBuzz", fizzBuzz.convert(42));
         Assertions.assertEquals("FizzBuzz", fizzBuzz.convert(63));
     }
-
+    @Test
+    void additionalSimpleTest() {
+    assertEquals(4, 2 + 2);
+    }
 }
