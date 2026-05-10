@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en" data-critters-container>
+
+<head>
+  <meta charset="utf-8">
+  <title>DevOpsDemo</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="node_modules/path-framework/styles.css">
+</head>
+
+<body>
+  <path-framework id="app" model-path="model.json" translations-path="translations.json"
+    frontend-version="0.0.2" start-page="mainmenu" current-user-form="OwnUserForm"></path-framework>
+  <script>
+    var resultUrl = "<unknown>";
+    var url = window.location.protocol + "//" + window.location.host;
+    url = url.replace("/#", "");
+    if (url.endsWith("/")) {
+      resultUrl = url + "services";
+    } else {
+      resultUrl = url + "/services";
+    }
+    if (resultUrl.includes("localhost") || resultUrl.includes("host.docker.internal")) {
+      resultUrl = resultUrl.replace(":3000", ":8080");
+    }
+    document.getElementById('app').setAttribute("backend-url", resultUrl);
+  </script>
+  <script src="node_modules/path-framework/polyfills.js" type="module"></script>
+  <script src="node_modules/path-framework/main.js" type="module"></script>
+</body>
+
+</html>

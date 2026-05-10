@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "frontend"
+		},
+		{
+			"path": "backend"
+		}
+	],
+	"settings": {
+		"java.configuration.updateBuildConfiguration": "interactive",
+		"java.import.exclusions": [
+			"/frontend",
+			"**/node_modules",
+			"**/.metadata",
+			"**/archetype-resources"
+		]
+	}
+}

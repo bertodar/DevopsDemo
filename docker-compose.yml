@@ -1,0 +1,56 @@
+services:
+  devopsdemo:
+    image: mosazhaw/devopsdemo
+    container_name: devopsdemo
+    ports:
+      - "8088:8080"
+
+  chrome:
+    image: selenium/node-chromium:135.0.7049.52
+    shm_size: 2gb
+    depends_on:
+      - selenium-hub
+    environment:
+      - SE_EVENT_BUS_HOST=selenium-hub
+      - SE_EVENT_BUS_PUBLISH_PORT=4442
+      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+
+  firefox:
+    image: selenium/node-firefox:4.26.0-20241101
+    shm_size: 2gb
+    depends_on:
+      - selenium-hub
+    environment:
+      - SE_EVENT_BUS_HOST=selenium-hub
+      - SE_EVENT_BUS_PUBLISH_PORT=4442
+      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+
+  chrome_video:
+    image: selenium/video:ffmpeg-7.1-20241101
+    volumes:
+      - ./frontend/tests/videos:/videos
+    depends_on:
+      - chrome
+    environment:
+      - DISPLAY_CONTAINER_NAME=chrome
+      - SE_NODE_GRID_URL=http://selenium-hub:4444
+      - SE_VIDEO_FILE_NAME=auto
+
+  firefox_video:
+    image: selenium/video:ffmpeg-7.1-20241101
+    volumes:
+      - ./frontend/tests/videos:/videos
+    depends_on:
+      - firefox
+    environment:
+      - DISPLAY_CONTAINER_NAME=firefox
+      - SE_NODE_GRID_URL=http://selenium-hub:4444
+      - SE_VIDEO_FILE_NAME=auto
+      
+  selenium-hub:
+    image: selenium/hub:4.26.0-20241101
+    container_name: selenium-hub
+    ports:
+      - "4442:4442"
+      - "4443:4443"
+      - "4444:4444"

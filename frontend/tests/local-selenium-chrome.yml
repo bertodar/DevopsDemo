@@ -1,0 +1,5 @@
+capabilities:
+  browserName: chrome
+  se:name: "chrome"
+baseUrl: "http://host.docker.internal:3000"
+server: "http://localhost:4444/"

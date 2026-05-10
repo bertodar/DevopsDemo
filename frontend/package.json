@@ -1,0 +1,42 @@
+{
+  "name": "devopsdemo",
+  "version": "0.2.0",
+  "description": "DevOpsDemo",
+  "keywords": [
+    "DevOps"
+  ],
+  "homepage": "https://github.com/devopszhaw/DevOps-04-DevOpsDemo",
+  "bugs": {
+    "url": "https://github.com/devopszhaw/DevOps-04-DevOpsDemo/issues"
+  },
+  "license": "LGPL-3.0",
+  "author": {
+    "name": "Adrian Moser"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/devopszhaw/DevOps-04-DevOpsDemo.git"
+  },
+  "engines": {
+    "node": ">=24",
+    "npm": ">=11"
+  },
+  "scripts": {
+    "start": "serve",
+    "lint:html": "htmlhint *.html",
+    "test-local-chrome": "npx selenium-side-runner tests/test.side --output-directory=./tests/test-reports --config-file tests/local-selenium-chrome.yml",
+    "test-local-firefox": "npx selenium-side-runner tests/test.side --output-directory=./tests/test-reports --config-file tests/local-selenium-firefox.yml",
+    "test-jenkins-chrome": "npx selenium-side-runner tests/test.side --output-directory=./tests/test-reports --config-file tests/jenkins-selenium-chrome.yml",
+    "test-jenkins-firefox": "npx selenium-side-runner tests/test.side --output-directory=./tests/test-reports --config-file tests/jenkins-selenium-firefox.yml"
+  },
+  "dependencies": {
+    "path-framework": "0.8.0-beta.8",
+    "serve": "14.2.4"
+  },
+  "devDependencies": {
+    "chromedriver": "130.0.2",
+    "htmlhint": "1.1.4",
+    "selenium-side-runner": "4.0.12",
+    "sonar-scanner": "3.1.0"
+  }
+}

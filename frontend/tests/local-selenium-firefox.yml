@@ -1,0 +1,5 @@
+capabilities:
+  browserName: firefox
+  se:name: "firefox"
+baseUrl: "http://host.docker.internal:3000"
+server: "http://localhost:4444/"

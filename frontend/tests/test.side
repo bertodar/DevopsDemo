@@ -1,0 +1,451 @@
+{
+  "id": "d8e6853c-e6b8-4c38-8f79-e42d0031f4d4",
+  "version": "2.0",
+  "name": "Test",
+  "url": "http://localhost:3000",
+  "tests": [
+    {
+      "id": "8ee98c89-830f-4bba-9f7d-ecdf703b8ce5",
+      "name": "Test",
+      "commands": [
+        {
+          "id": "a49037c3-0929-4f66-b951-d009cf82aeaf",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "1461e2b5-6f97-416f-b7f0-587c7124cdea",
+          "comment": "",
+          "command": "setWindowSize",
+          "target": "992x857",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "css=.card-body",
+          "targets": [],
+          "value": "10000",
+          "id": "27b34c55-df60-4903-8fbe-983b8982e4b9"
+        },
+        {
+          "id": "6f57e860-f4c3-4100-a474-f42397e16b01",
+          "comment": "",
+          "command": "click",
+          "target": "css=.card-body",
+          "targets": [
+            [
+              "css=.card-body",
+              "css:finder"
+            ],
+            [
+              "xpath=//path-framework[@id='app']/path-application/div/div/div/div[2]/div/span/span/span/path-button-group/span/div/span/span/path-button/a/div",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//a/div",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "css=.tile-green",
+          "targets": [],
+          "value": "10000",
+          "id": "057f9aad-44e9-49c5-8eec-c2ec920a1e77",
+          "fallbackTargets": [
+            [
+              "css=.fa:nth-child(3)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//path-framework[@id='app']/path-application/div/div/div/div/div/span[2]/span/span/path-button-group/span/div/span/span/path-button/a/div/i)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "id": "84deaa58-2c75-42c3-9061-3bf4ec80d29e",
+          "comment": "",
+          "command": "click",
+          "target": "css=.tile-green",
+          "targets": [
+            [
+              "css=.tile-green",
+              "css:finder"
+            ],
+            [
+              "xpath=//path-framework[@id='app']/path-application/div/div/div/div/div/span[2]/span/span/path-button-group/span/div/span/span/path-button/a/div",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//path-button/a/div",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "68ecab4c-80bf-4260-8087-850974d7d67e",
+          "comment": "",
+          "command": "click",
+          "target": "css=.ng-invalid",
+          "targets": [
+            [
+              "css=.ng-invalid",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@type='text'])[3]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[@id='myModal']/div/path-form/div/form/div[2]/div/span/span/path-textfield/span/div/input",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//span/div/input",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "cd433242-1f2b-446c-a3c3-b4b67ed1d3b4",
+          "comment": "",
+          "command": "type",
+          "target": "xpath=(//input[@type='text'])[3]",
+          "targets": [
+            [
+              "css=.ng-dirty",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@type='text'])[3]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[@id='myModal']/div/path-form/div/form/div[2]/div/span/span/path-textfield/span/div/input",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//span/div/input",
+              "xpath:position"
+            ]
+          ],
+          "value": "A unique 71382 String!"
+        },
+        {
+          "id": "9fae656b-2a71-4fa9-a8b6-cb2a096fdec6",
+          "comment": "",
+          "command": "click",
+          "target": "css=.btn:nth-child(3) > .path-default-font",
+          "targets": [
+            [
+              "css=.btn:nth-child(3) > .path-default-font",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='myModal']/div/path-form/div/form/div[3]/button[3]/span",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//button[3]/span",
+              "xpath:position"
+            ],
+            [
+              "xpath=//span[contains(.,'Ok')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "c3bff848-3d49-4930-9f28-453659f464ad",
+          "comment": "",
+          "command": "click",
+          "target": "css=.form-control:nth-child(1)",
+          "targets": [
+            [
+              "css=.form-control:nth-child(1)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@name='search'])[2]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//path-framework[@id='app']/path-application/div/div/div/div/div/span[3]/span/span/path-list/span/span/div/div/form/input",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//form/input",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "df1b56ac-134d-4ba5-ac81-be36e4d0741b",
+          "comment": "",
+          "command": "type",
+          "target": "css=.form-control:nth-child(1)",
+          "targets": [
+            [
+              "css=.form-control:nth-child(1)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@name='search'])[2]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//path-framework[@id='app']/path-application/div/div/div/div/div/span[3]/span/span/path-list/span/span/div/div/form/input",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//form/input",
+              "xpath:position"
+            ]
+          ],
+          "value": "A unique 71382 String!"
+        },
+        {
+          "id": "1",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "css=.tile-wet-asphalt",
+          "targets": [],
+          "value": "10000"
+        },
+        {
+          "id": "31c1d4cb-9ab2-4b35-86dd-ce8dca00ab43",
+          "comment": "",
+          "command": "click",
+          "target": "css=.tile-wet-asphalt",
+          "targets": [
+            [
+              "css=.tile-wet-asphalt",
+              "css:finder"
+            ],
+            [
+              "xpath=//path-framework[@id='app']/path-application/div/div/div/div/div/span[3]/span/span/path-list/span/span[7]/path-button-group/span/div/span/span/path-button/a/div",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//span[7]/path-button-group/span/div/span/span/path-button/a/div",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "501c37d1-7ff7-49bd-a749-f0e9697fdfac",
+          "comment": "",
+          "command": "click",
+          "target": "css=.mr-auto > .path-default-font",
+          "targets": [
+            [
+              "css=.mr-auto > .path-default-font",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='myModal']/div/path-form/div/form/div[3]/button/span",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//div[3]/button/span",
+              "xpath:position"
+            ],
+            [
+              "xpath=//span[contains(.,'Delete')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "c5e99754-9cb3-4251-9393-cd9eb05940bc",
+          "comment": "",
+          "command": "click",
+          "target": "css=.modal-footer:nth-child(2) > .btn:nth-child(2) > .path-default-font",
+          "targets": [
+            [
+              "css=.modal-footer:nth-child(2) > .btn:nth-child(2) > .path-default-font",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='myModal']/div/path-form/div/form/div[2]/button[2]/span",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//div[2]/button[2]/span",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "0f90b434-e103-45a7-9514-c1376d0355f2",
+          "comment": "",
+          "command": "click",
+          "target": "css=.breadcrumb-item > a",
+          "targets": [
+            [
+              "linkText=Hauptmenü",
+              "linkText"
+            ],
+            [
+              "css=.breadcrumb-item > a",
+              "css:finder"
+            ],
+            [
+              "xpath=//a[contains(text(),'Hauptmenü')]",
+              "xpath:link"
+            ],
+            [
+              "xpath=//path-framework[@id='app']/path-application/div/div/path-breadcrumb/div/h4/ol/li/a",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=(//a[contains(@href, '#')])[4]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//ol/li/a",
+              "xpath:position"
+            ],
+            [
+              "xpath=//a[contains(.,'Hauptmenü')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "7fa6724b-9ad2-4600-a4ac-43d4fe580bc6",
+          "comment": "",
+          "command": "click",
+          "target": "css=.h4",
+          "targets": [
+            [
+              "css=.h4",
+              "css:finder"
+            ],
+            [
+              "xpath=//path-framework[@id='app']/path-application/div/div/div/div[2]/div/span/span/span/path-button-group/span/div/span/span/path-button/a/div/div",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//a/div/div",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "ff4684a3-3d88-483d-a313-1aa3d87803ba",
+          "comment": "",
+          "command": "click",
+          "target": "xpath=(//input[@name='search'])[2]",
+          "targets": [
+            [
+              "css=.form-control:nth-child(1)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@name='search'])[2]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//path-framework[@id='app']/path-application/div/div/div/div/div/span[3]/span/span/path-list/span/span/div/div/form/input",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//form/input",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "f0f60137-f2f5-4534-9dd9-74f6e6e5028d",
+          "comment": "",
+          "command": "type",
+          "target": "css=.form-control:nth-child(1)",
+          "targets": [
+            [
+              "css=.form-control:nth-child(1)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@name='search'])[2]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//path-framework[@id='app']/path-application/div/div/div/div/div/span[3]/span/span/path-list/span/span/div/div/form/input",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//form/input",
+              "xpath:position"
+            ]
+          ],
+          "value": "A unique 71382 String!"
+        },
+        {
+          "id": "72531458-bb0e-44b3-9e26-f9355ddda1c6",
+          "comment": "",
+          "command": "waitForElementNotPresent",
+          "target": "xpath=//span[2]/path-button-group/span/div/span/span/path-button/a/div",
+          "targets": [],
+          "value": "10000"
+        },
+        {
+          "id": "da2129c5-9f69-485c-b9dd-914619022cb3",
+          "comment": "",
+          "command": "assertElementNotPresent",
+          "target": "xpath=//span[2]/path-button-group/span/div/span/span/path-button/a/div",
+          "targets": [
+            [
+              "css=span:nth-child(2) > path-button-group .card-body",
+              "css:finder"
+            ],
+            [
+              "xpath=//path-framework[@id='app']/path-application/div/div/div/div/div/span[3]/span/span/path-list/span/span[2]/path-button-group/span/div/span/span/path-button/a/div",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//span[2]/path-button-group/span/div/span/span/path-button/a/div",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "suites": [
+    {
+      "id": "a72bc4cc-84e4-42ed-b920-a2d321bd59ca",
+      "name": "Default Suite",
+      "persistSession": false,
+      "parallel": false,
+      "timeout": 300,
+      "tests": [
+        "8ee98c89-830f-4bba-9f7d-ecdf703b8ce5"
+      ]
+    }
+  ],
+  "urls": [
+    "http://localhost:3000/"
+  ],
+  "plugins": []
+}

@@ -1,0 +1,5 @@
+capabilities:
+  browserName: firefox
+  se:name: "firefox"
+baseUrl: "http://devopsdemo:8080"
+server: "http://selenium-hub:4444/"
