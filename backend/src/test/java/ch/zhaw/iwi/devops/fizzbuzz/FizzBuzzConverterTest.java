@@ -57,6 +57,6 @@ public class FizzBuzzConverterTest {
     }
     @Test
     void additionalSimpleTest() {
-    assertEquals(4, 2 + 2);
+    assertEquals(8, 4 + 4);
     }
 }
